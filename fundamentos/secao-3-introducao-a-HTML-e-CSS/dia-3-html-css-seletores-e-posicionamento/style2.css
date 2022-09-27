@@ -8,16 +8,22 @@
   }
   
   .baloon {
-  
+        position: relative;
+        bottom: 15cm;
+        left: 6cm
   }
   
   .speach {
     font-size: 25px;
     position: relative;
-    top: 30mm;
-    left: 6mm;
+    bottom: 12cm;
+    left: 65mm;
+    z-index: 2;
   }
   
   .bowser {
     width: 200px;
+    position: relative;
+    bottom: 6cm;
+    left: 12cm;
   }

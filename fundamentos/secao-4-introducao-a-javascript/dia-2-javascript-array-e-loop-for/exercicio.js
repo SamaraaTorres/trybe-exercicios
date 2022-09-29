@@ -20,9 +20,19 @@ console.log(media)
 
 //Com base no código que acabou de gerar, faça com que, caso o valor final seja maior que 20, imprima a mensagem: “valor maior que 20”. Caso não seja, imprima a mensagem: “valor menor ou igual a 20”;
 
+if (media > 20) {console.log("valor maior que 20");
+} else {console.log('valor menor ou igual a 20');
+}
 
 //Utilizando for, descubra qual o maior valor contido no array e imprima-o;
+let maiorValor = 0
 
+for (let valor = 0; valor < numbers.length; valor = valor + 1) { if (numbers[valor] > maiorValor ) {
+    maiorValor = numbers[valor];
+}
+}
+
+console.log(maiorValor)
 
 //Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”;
 

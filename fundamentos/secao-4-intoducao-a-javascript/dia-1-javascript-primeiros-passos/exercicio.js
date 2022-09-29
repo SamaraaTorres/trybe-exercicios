@@ -104,3 +104,41 @@ if (porcentagem >= 90) {
 } else {console.log("Erro");
 }
 }
+
+//Utilize if/else para fazer um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele deve retornar false.
+
+const number1 = 13
+const number2 = 28
+const number3 = 47
+
+if (number1 % 2 === 0 | number2 % 2 === 0 | number3 % 2 === 0) {console.log("true");
+} else {console.log("false")}
+
+//Utilize if/else para fazer um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele deve retornar false.
+
+let impar = false
+
+if (number1 % 2 > 0 | number2 % 2 > 0 | number3 % 2 > 0) {impar = true;}
+
+console.log(impar);
+
+//Utilize if/else para escrever um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda, descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+
+const custo = 800
+const custoTotal = custo / 5
+const venda = 2000
+const lucro = venda - custo;
+
+if (custo >= 0 && venda >= 0) {
+    console.log(lucro);
+} else {console.log("Error, valores não podem ser negativos");
+}
+
+//Utilize if/else para fazer um programa que, dado um salário bruto, calcule o líquido a ser recebido.
+
+const salarioBruto = 3000
+let inssDesconto = 330
+let impostoRenda = 57.45
+const salarioLiquido = salarioBruto - inssDesconto - impostoRenda
+
+console.log(salarioLiquido)

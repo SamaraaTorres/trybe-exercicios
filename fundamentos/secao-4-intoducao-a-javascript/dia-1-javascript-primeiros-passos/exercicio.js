@@ -46,3 +46,31 @@ if (anguloA + anguloB + anguloC === 180 && anguloA >= 0 && anguloB >= 0 && angul
 }
 
 console.log(triangulo)
+
+//Utilize switch/case para fazer um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+
+let peca = "Bispo";
+
+switch (peca.toLowerCase()) {
+    case  "peão":
+        console.log("uma casa para frente");
+        break;
+    case  "bispo":
+        console.log("Diagonal");
+        break;
+    case "cavalo":
+        console.log("movimento em L");
+        break;
+    case "torre":
+        console.log("vertical e horizontal");
+        break;
+    case "Rainha":
+        console.log("vertical, horizontal e diagonal");
+        break;
+    case "Rei":
+        console.log("uma casa em qualquer direção");
+        break
+    default:
+        console.log("Peça inválida.")
+
+}

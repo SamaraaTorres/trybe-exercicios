@@ -74,3 +74,33 @@ switch (peca.toLowerCase()) {
         console.log("Peça inválida.")
 
 }
+
+//Utilize if/else para fazer um programa que converta uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F.
+
+const porcentagem = 60
+
+if (porcentagem >= 90) {
+    if (porcentagem > 0 && porcentagem < 100) {console.log("A");
+} else {console.log("Erro");
+}
+} else if (porcentagem >= 80) {
+    if (porcentagem > 0 && porcentagem < 100) {console.log("B");
+} else {console.log("Erro");
+}
+} else if (porcentagem >= 70) {
+    if (porcentagem > 0 && porcentagem < 100) {console.log("C");
+} else {console.log("Erro");
+}
+} else if (porcentagem >= 60) {
+    if (porcentagem > 0 && porcentagem < 100) {console.log("D");
+} else {console.log("Erro");
+}
+} else if (porcentagem >= 50) {
+    if (porcentagem > 0 && porcentagem < 100) {console.log("E");
+} else {console.log("Erro");
+}
+} else if (porcentagem < 50) {
+    if (porcentagem > 0 && porcentagem < 100) {console.log("F");
+} else {console.log("Erro");
+}
+}

@@ -36,6 +36,19 @@ console.log(maiorValor)
 
 //Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”;
 
+let numerosimpares = 0
+
+for (let numeros = 0; numeros < numbers.length; numeros = numeros + 1) {
+    if (numbers[numeros] % 2 !== 0) {
+        numerosimpares = numerosimpares + 1
+} 
+}
+
+if (numerosimpares !== 0) {
+    console.log(numerosimpares);
+} else {
+    console.log("nenhum valor impar encontrado");
+}
 
 //Utilizando for, descubra qual o menor valor contido no array e imprima-o;
 

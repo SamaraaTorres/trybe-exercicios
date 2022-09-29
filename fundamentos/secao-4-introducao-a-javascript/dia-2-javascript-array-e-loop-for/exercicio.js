@@ -72,3 +72,7 @@ console.log(array)
 
 
 //Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.
+
+for (let div = 0; div < array.length; div = div + 1) {
+    console.log(array[div] / 2)
+}

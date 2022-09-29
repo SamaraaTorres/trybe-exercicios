@@ -64,6 +64,11 @@ console.log(menorValor)
 
 
 //Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;
+let array = []
+for (let numberArray = 1; numberArray <= 25; numberArray = numberArray + 1) {
+    array.push(numberArray);
+}
+console.log(array)
 
 
 //Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.

@@ -17,7 +17,7 @@ let names = {
     person1: 'João',
     person2: 'Maria',
     person3: 'Jorge',
-  };
+};
 for (let person in names) {
     console.log(names[person]);
 }
@@ -27,14 +27,14 @@ let car = {
     model: 'A3 Sedan',
     manufacturer: 'Audi',
     year: 2020
-  };
+};
 
-  for (let key in car) {
+for (let key in car) {
     console.log(key, car[key]);
-  }
+}
 //Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b, definidas no começo com os valores que serão operados.
 function adicao(a, b) {
-    let soma = a + b; 
+    let soma = a + b;
 }
 function subtracao(a, b) {
     let subitrai = a - b;
@@ -65,5 +65,26 @@ function maiorValorDeTres(valor1, valor2, valor3) {
         console.log(valor2);
     } else {
         console.log(valor3);
+    }
+}
+function positiveOrNegative(number) {
+    if (number > 0) {
+        console.log('positive');
+    } else if (number < 0) {
+        console.log('negative');
+    } else {
+        console.log('zero');
+    }
+}
+
+//Faça um programa que receba três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. Se algum ângulo for inválido, o programa deve retornar uma mensagem de erro.
+function verificaTriangulo(angulo1, angulo2, angulo3) {
+    let verificaAngulo = angulo1 > 0 && angulo2 > 0 && angulo3 > 0;
+    if (angulo1 + angulo2 + angulo3 === 180 && verificaAngulo === true) {
+        console.log('true');
+    } else if (angulo1 + angulo2 + angulo3 !== 180 && verificaAngulo === true) {
+        console.log('false');
+    } else {
+        console.log('Error')
     }
 }

@@ -26,5 +26,14 @@
     ondeEstou.nextElementSibling
     //Agora acesse o terceiroFilho a partir de pai.
     ondeEstou.parentElement.children[2];
+    //Crie um irmão para elementoOndeVoceEsta.
+    const irmao = document.createElement('section');
+    ondeEstou.parentElement.appendChild(irmao);
+    //Crie um filho para elementoOndeVoceEsta.
+    const filho = document.createElement('section');
+    ondeEstou.appendChild(filho);
+    //Crie um filho para primeiroFilhoDoFilho.
+    const filhoPrimeiroFilho = document.createElement('section');
+    ondeEstou.firstChild.appendChild(filhoPrimeiroFilho);
 
   </script>

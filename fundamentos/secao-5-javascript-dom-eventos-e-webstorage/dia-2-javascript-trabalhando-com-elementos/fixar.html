@@ -1,0 +1,30 @@
+<main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+  <script>
+    //Acesse o elemento elementoOndeVoceEsta.
+    const ondeEstou = document.getElementById('elementoOndeVoceEsta');
+    ondeEstou.parentElement.style.color = 'red'
+    //Acesse o primeiroFilhoDoFilho e adicione um texto a ele.
+    ondeEstou.firstElementChild.innerText = 'Eu sou o filho do filho'
+    //Acesse o primeiroFilho a partir de pai.
+    ondeEstou.parentElement.firstChild
+    //Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+    ondeEstou.previousElementSibling
+    //Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+    ondeEstou.nextSibling
+    //Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
+    ondeEstou.nextElementSibling
+    //Agora acesse o terceiroFilho a partir de pai.
+    ondeEstou.parentElement.children[2];
+
+  </script>

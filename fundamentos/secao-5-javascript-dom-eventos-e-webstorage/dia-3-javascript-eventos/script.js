@@ -22,7 +22,19 @@ function days() {
     for (let index = 0; index < decemberDaysList.length; index += 1) {
         const createLi = document.createElement('li');
         createLi.innerText = decemberDaysList[index];
+        createLi.classList.add('day')
         daysUl.appendChild(createLi);
     }
 }
 days()
+
+function diasFeriado() {
+    const lista = document.querySelectorAll('li');
+    for (let index = 0; index < lista.length; index += 1) {
+        const dia = lista[index].innerText
+        if (dia === '24' || dia === '25' || dia === '31') {
+            lista[index].classList.add('holiday')
+        }
+    }
+}
+diasFeriado()

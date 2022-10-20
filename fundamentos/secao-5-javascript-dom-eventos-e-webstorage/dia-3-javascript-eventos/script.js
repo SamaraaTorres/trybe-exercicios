@@ -38,3 +38,15 @@ function diasFeriado() {
     }
 }
 diasFeriado()
+
+function diasSexta() {
+    const lista = document.querySelectorAll('li');
+    for (let index = 0; index < lista.length; index += 1) {
+        const dia = lista[index].innerText
+        if (dia === '4' || dia === '11' || dia === '18' || dia === '25') {
+            lista[index].classList.add('friday')
+        }
+    }
+}
+
+diasSexta()

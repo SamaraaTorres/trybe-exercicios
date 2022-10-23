@@ -119,3 +119,12 @@ function criaTarefas(tarefa) {
     myTasks.appendChild(span);
 }
 
+
+function legendaTarefa(cor) {
+    const div = document.createElement('div');
+    div.className = 'task';
+    const myTasks = document.querySelector('.my-tasks');
+    myTasks.appendChild(div);
+    const task = document.querySelector('.task')
+    task.style.backgroundColor = cor
+}

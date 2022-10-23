@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TrybeTrip</h1>
+    <fieldset>
+        <form action="">
+            <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" maxlength="40" minlength="10">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" maxlength="50" minlength="10">
+            </div>
+            <div>
+                <label for="city">
+                    <input type="radio" name="destino" value="cidade" id="city"> Cidade 
+                </label>
+                <label for="campo">
+                    <input type="radio" name="destino" value="campo" id="campo"> Campo
+                </label>
+                <label for="beach">
+                    <input type="radio" name="destino" value="praia" id="beach"> Praia
+                </label>
+                <label for="mont">
+                    <input type="radio" name="destino" value="montanhas" id="mont"> Montanhas
+                </label>
+            </div>
+            <div>
+                <h2>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h2>
+                <textarea name="descricao" id="descricao" cols="30" rows="10" maxlength="500" name="resposta" ></textarea>
+            </div>
+            <div>
+            <label for="data">Qual a melhor data para realizar sua viagem?</label>
+            <input type="date" id="data" name="data">
+            <label for="oportunidades">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+            <input type="checkbox" id="oportunidades" value="concordo" name="receber-oportunidades" >
+            <label for="divulgacao">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+            <input type="checkbox" id="imagens-divulgacao" value="concordo" name="divulgacao">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+</body>
+</html>

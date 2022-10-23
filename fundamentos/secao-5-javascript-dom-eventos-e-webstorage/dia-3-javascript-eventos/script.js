@@ -72,3 +72,28 @@ function mudarCorFeriados() {
 }
 
 botaoHoliday.addEventListener('click', mudarCorFeriados);
+
+function criaBotaoSexta(nome) {
+    const buttonsContainer = document.querySelector('.buttons-container')
+    const botao = document.createElement('button');
+    botao.innerText = nome;
+    botao.id = 'btn-friday';
+    buttonsContainer.appendChild(botao);
+}
+
+criaBotaoSexta('Sexta-feira')
+
+function mudaSexta() {
+    const friday = document.querySelectorAll('.friday');
+    for (let index = 0; index < friday.length; index++) {
+        if (friday[index].style.backgroundColor !== 'yellow') {
+            friday[index].style.backgroundColor = 'yellow';
+        } else {
+            friday[index].style.backgroundColor = '';
+        }
+    }
+}
+
+const botaoFriday = document.querySelector('#btn-friday');
+
+botaoFriday.addEventListener('click', mudaSexta);

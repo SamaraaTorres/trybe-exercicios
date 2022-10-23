@@ -97,3 +97,17 @@ function mudaSexta() {
 const botaoFriday = document.querySelector('#btn-friday');
 
 botaoFriday.addEventListener('click', mudaSexta);
+
+function zoom(event) {
+    event.target.style.fontSize = '45px';
+}
+
+function retiraZoom(event) {
+    event.target.style.fontSize = '20px';
+}
+
+const dias = document.querySelectorAll('.day');
+for (let index = 0; index < dias.length; index += 1) {
+    dias[index].addEventListener('mouseover', zoom);
+    dias[index].addEventListener('mouseleave', retiraZoom);
+}

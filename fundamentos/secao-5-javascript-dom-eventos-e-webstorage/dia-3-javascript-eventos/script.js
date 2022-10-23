@@ -111,3 +111,11 @@ for (let index = 0; index < dias.length; index += 1) {
     dias[index].addEventListener('mouseover', zoom);
     dias[index].addEventListener('mouseleave', retiraZoom);
 }
+
+function criaTarefas(tarefa) {
+    const span = document.createElement('span');
+    span.innerText = tarefa;
+    const myTasks = document.querySelector('.my-tasks');
+    myTasks.appendChild(span);
+}
+

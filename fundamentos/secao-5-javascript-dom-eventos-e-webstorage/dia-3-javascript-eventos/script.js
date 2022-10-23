@@ -22,7 +22,7 @@ function days() {
     for (let index = 0; index < decemberDaysList.length; index += 1) {
         const createLi = document.createElement('li');
         createLi.innerText = decemberDaysList[index];
-        createLi.classList.add('day')
+        createLi.classList.add('day');
         daysUl.appendChild(createLi);
     }
 }
@@ -31,9 +31,9 @@ days()
 function diasFeriado() {
     const lista = document.querySelectorAll('li');
     for (let index = 0; index < lista.length; index += 1) {
-        const dia = lista[index].innerText
+        const dia = lista[index].innerText;
         if (dia === '24' || dia === '25' || dia === '31') {
-            lista[index].classList.add('holiday')
+            lista[index].classList.add('holiday');
         }
     }
 }
@@ -42,11 +42,33 @@ diasFeriado()
 function diasSexta() {
     const lista = document.querySelectorAll('li');
     for (let index = 0; index < lista.length; index += 1) {
-        const dia = lista[index].innerText
+        const dia = lista[index].innerText;
         if (dia === '4' || dia === '11' || dia === '18' || dia === '25') {
-            lista[index].classList.add('friday')
+            lista[index].classList.add('friday');
         }
     }
 }
-
 diasSexta()
+
+function criaBotao(nome) {
+    const buttonsContainer = document.querySelector('.buttons-container')
+    const botao = document.createElement('button');
+    botao.innerText = nome;
+    botao.id = 'btn-holiday';
+    buttonsContainer.appendChild(botao);
+}
+
+criaBotao('Feriados');
+
+const botaoHoliday = document.querySelector('#btn-holiday');
+
+function mudarCorFeriados() {
+    const holiday = document.querySelectorAll('.holiday');
+    for (let index = 0; index < holiday.length; index++) {
+        if (holiday[index].style.color === 'red') {
+            holiday[index].style.color = '#777';
+        } else {holiday[index].style.color = 'red'};
+    }
+}
+
+botaoHoliday.addEventListener('click', mudarCorFeriados);

@@ -41,10 +41,33 @@
             <label for="oportunidades">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
             <input type="checkbox" id="oportunidades" value="concordo" name="receber-oportunidades" >
             <label for="divulgacao">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
-            <input type="checkbox" id="imagens-divulgacao" value="concordo" name="divulgacao">
+            <input type="checkbox" id="imagens-divulgacao" value="concordo" name="divulgacao" required>
             </div>
-            <button type="submit">Enviar</button>
+            <button type="submit" id="submit-button">Enviar</button>
+            <button type="reset" id="reset-button">Limpar</button>
         </form>
     </fieldset>
 </body>
+<script>
+    const submitButton = document.querySelector('#submit-button');
+    function preventDefault(event) {
+        event.preventDefault()
+    }
+    function validaDados() {
+        const nome = document.querySelector('#nome');
+        const email = document.querySelector('#email');
+        const textarea = document.querySelector('#descricao');
+        if (nome.value.length > nome.maxLength || nome.value.length < nome.minLength) {
+            window.alert('Dados Inválidos');
+        } else if (email.value.length > email.maxLength || email.value.length < email.minLength) {
+            window.alert('Dados Inválidos');
+        } else if (textarea.value.length > textarea.maxLength) {
+            window.alert('Dados Inválidos');
+        } else {
+            window.alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.')
+        }
+    }
+    submitButton.addEventListener('click', preventDefault);
+    submitButton.addEventListener('click', validaDados);
+</script>
 </html>

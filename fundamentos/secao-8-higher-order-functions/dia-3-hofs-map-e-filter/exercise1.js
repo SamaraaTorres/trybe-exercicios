@@ -100,4 +100,29 @@ const nameAndAge = () => {
   return authorResult
 }
 
-console.log(nameAndAge());
+//Filtre todos os objetos do gênero ficção científica ou fantasia.
+
+const fantasyOrScienceFiction = () => {
+  // escreva seu código aqui
+  const filterBooks = books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia' );
+  return filterBooks
+}
+  
+//Filtre os livros com mais de 60 anos desde sua publicação e ordene a partir do livro mais velho para o mais novo.
+
+const oldBooksOrdered = () => {
+  // escreva seu código aqui
+  const filterRelease = books.filter((book) => 2022 - book.releaseYear > 60);
+  filterRelease.sort((a, b) => a.releaseYear - b.releaseYear);
+  return filterRelease;
+}
+
+//Faça uma função que retorne os nomes dos livros, dado o ano de nascimento das pessoas autoras.
+
+const booksByAuthorBirthYear = (birthYear) => {
+  // escreva seu código aqui
+  const ageBooks = books.filter((book) => book.author.birthYear === birthYear);
+  const allBooks = ageBooks.map((book) => book.name);
+  return allBooks 
+}
+const result = booksByAuthorBirthYear(1920);

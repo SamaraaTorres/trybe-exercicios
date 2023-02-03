@@ -2,11 +2,11 @@
 
 
 const emailListInData = [
-    'roberta@email.com',
-    'paulo@email.com',
-    'anaroberta@email.com',
-    'fabiano@email.com',
-  ];
+  'roberta@email.com',
+  'paulo@email.com',
+  'anaroberta@email.com',
+  'fabiano@email.com',
+];
   
 // Adicione seu código abaixo:
 
@@ -33,10 +33,10 @@ nam.find((name) => name.length === 5);
 //Utilize o find para encontrar a música com id igual a '31031685', caso ela exista:
 
 const musicas = [
-    { id: '31031685', title: 'Partita in C moll BWV 997' },
-    { id: '31031686', title: 'Toccata and Fugue, BWV 565' },
-    { id: '31031687', title: 'Chaconne, Partita No. 2 BWV 1004' },
-  ];
+  { id: '31031685', title: 'Partita in C moll BWV 997' },
+  { id: '31031686', title: 'Toccata and Fugue, BWV 565' },
+  { id: '31031687', title: 'Chaconne, Partita No. 2 BWV 1004' },
+];
   
 // Adicione seu código abaixo:
 
@@ -68,18 +68,27 @@ Crie uma função que verifica se todas as pessoas do array people possuem a ida
 Retorne true se todas tiverem a idade maior ou igual à mínima e, caso contrário, false.*/
 
 const people = [
-    { name: 'Mateus', age: 18 },
-    { name: 'José', age: 16 },
-    { name: 'Ana', age: 23 },
-    { name: 'Cláudia', age: 20 },
-    { name: 'Bruna', age: 19 },
-  ];
+  { name: 'Mateus', age: 18 },
+  { name: 'José', age: 16 },
+  { name: 'Ana', age: 23 },
+  { name: 'Cláudia', age: 20 },
+  { name: 'Bruna', age: 19 },
+];
   
-    //Adicione seu código abaixo:
+  //Adicione seu código abaixo:
 
-    const verifyAges = ((arr, num) => {
-        return arr.every((person) => person.age >= num);
-    })
+  const verifyAges = ((arr, num) => {
+    return arr.every((person) => person.age >= num);
+  })
   
   console.log(verifyAges(people, 18));
   console.log(verifyAges(people, 14));
+
+  //A nova tarefa do seu time de desenvolvimento é organizar o sistema de pessoas colaboradoras de uma rede de mercados. Para isso:
+  //Utilize o sort para ordenar o array pela idade das pessoas em ordem crescente.
+  
+  people.sort((a, b) => a.age - b.age);
+
+  console.log(people);
+
+
